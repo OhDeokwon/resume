@@ -1,10 +1,18 @@
 <template>
+  <div class="container">
+    <privacy-section-container />
+  </div>
 </template>
 
 <script>
-  export default {
-    name: "index"
+import PrivacySectionContainer from '../components/containers/PrivacySectionContainer'
+
+export default {
+  name: 'index',
+  components: {
+    PrivacySectionContainer
   }
+}
 </script>
 
 <style scoped>
