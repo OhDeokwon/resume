@@ -49,7 +49,7 @@ export default {
     justify-content: center;
 
     .title {
-      flex: 1 1 auto;
+      flex: 1 1 170px;
       font-family: NotoSansKR-Medium;
       margin: 16px 30px 8px 0;
     }
