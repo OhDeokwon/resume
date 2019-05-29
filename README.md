@@ -1,29 +1,4 @@
-# resume
+# 이력서 Git Pages 저장소
+저의 이력서 웹사이트를 제작하는데 사용하는 저장소입니다!
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**Vue를** 이용해 개발하였고, **Atomic Design**을 따르려 노력했습니다.
