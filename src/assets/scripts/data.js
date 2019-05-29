@@ -28,13 +28,6 @@ export default {
           이 부분을 중점적으로 고민하며 개발에 임했습니다.
           
           현재는 Native iOS Application 개발을 진행하고 있습니다.`
-        },
-        {
-          title: 'Software Maestro 8th',
-          position: '팀장',
-          date: '2017.8 ~ 2017.12',
-          content: `소프트웨어 마에스트로 8기 수료생입니다.
-          고등학교 3학년 재학중 진행했던 것으로, 컴포넌트 자체 엔진 개발 프로젝트를 진행했습니다.`
         }
       ]
     },
@@ -46,6 +39,13 @@ export default {
           position: 'iOS 개발 파트',
           date: '2018.3 ~ 2018.7',
           content: `대학생 연합 IT벤처 창업 동아리에 가입하여 iOS 개발 파트로서 활동했습니다.`
+        },
+        {
+          title: 'Software Maestro 8th',
+          position: '팀장',
+          date: '2017.8 ~ 2017.12',
+          content: `소프트웨어 마에스트로 8기 수료생입니다.
+          고등학교 3학년 재학중 진행했던 것으로, 컴포넌트기반 자체 엔진 개발 프로젝트를 진행했습니다.`
         },
         {
           title: '우리동네 냥아치',
