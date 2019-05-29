@@ -6,6 +6,7 @@
     <div class="main-content-layout">
       <privacy-section-container />
       <antecedents-section-container />
+      <social-buttons-container />
     </div>
   </div>
 </template>
@@ -13,10 +14,12 @@
 <script>
 import PrivacySectionContainer from '../components/containers/PrivacySectionContainer'
 import AntecedentsSectionContainer from "../components/containers/AntecedentsSectionContainer"
+import SocialButtonsContainer from "../components/containers/SocialButtonsContainer";
 
 export default {
   name: 'index',
   components: {
+    SocialButtonsContainer,
     AntecedentsSectionContainer,
     PrivacySectionContainer
   }
