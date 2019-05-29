@@ -1,7 +1,7 @@
 export default {
   privacy: {
     name: '김덕원',
-    updated: '2019-5-23',
+    updated: '2019-5-29',
     email: 'codevillain@naver.com',
     phone: '010.8557.8011',
     introduce: `안녕하세요! 사용자의 입장에서 개발하는 개발자가 되기 위해 노력하는 김덕원입니다.
