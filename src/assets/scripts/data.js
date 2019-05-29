@@ -72,7 +72,7 @@ export default {
   ],
   buttons: [
     {
-      image: '/images/github.png',
+      image: 'images/github.png',
       url: 'https://github.com/OhDeokwon'
     }
   ]
