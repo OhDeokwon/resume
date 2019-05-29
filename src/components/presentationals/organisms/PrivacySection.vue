@@ -6,10 +6,7 @@
     <paragraph class="sub-text" :text="'연락처: ' + phone" />
     <paragraph
       class="introduce-text"
-      text="
-      안녕하세요! 게임 개발자에서 서비스 개발자가 된 김덕원입니다.
-      어제의 자신보다 개발을 잘하는 사람이 되기 위해 매일 공부하고 있습니다.
-      "
+      :text="introduce"
     />
   </section>
 </template>
@@ -38,13 +35,21 @@ export default {
     phone: {
       type: String,
       required: true
+    },
+    introduce: {
+      type: String,
+      required: true
     }
   }
 }
 </script>
 
 <style scoped lang="scss">
-h1 { text-align: left; }
-.title {
-}
+  h1 { text-align: left; }
+  .title {
+  }
+  .sub-text {
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
 </style>
