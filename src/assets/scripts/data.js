@@ -1,7 +1,7 @@
 export default {
   privacy: {
     name: '김덕원',
-    updated: '2019-5-29',
+    updated: '2019-05-29',
     email: 'codevillain@naver.com',
     phone: '010.8557.8011',
     introduce: `안녕하세요! 사용자의 입장에서 개발하는 개발자가 되기 위해 노력하는 김덕원입니다.
@@ -36,22 +36,33 @@ export default {
       title: '프로젝트 및 활동',
       blocks: [
         {
+          title: 'KB AppChallenge',
+          position: 'iOS 개발',
+          date: '2018.11',
+          content: `KB 금융지주에서 SOPT 회원들을 대상으로 2주동안 실시된 앱잼입니다.
+          Youth(2030) 세대들을 위한 금융 서비스 제작을 주제로, 여행과 금융을 섞은
+          TrableLuck이라는 서비스를 통해 대상을 수상했습니다.
+          
+          OpenCV를 활용한 영수증 인식을 구현했습니다.
+          짧은 기간상 OpenCV로 영수증 인식만 구현하고 Microsoft Project Oxford를 사용해 OCR을 구현했습니다.`
+        },
+        {
           title: 'SOPT 22nd',
           position: 'iOS 개발 파트',
-          date: '2018.3 ~ 2018.7',
+          date: '2018.03 ~ 2018.07',
           content: `대학생 연합 IT벤처 창업 동아리에 가입하여 iOS 개발 파트로서 활동했습니다.`
         },
         {
           title: 'Software Maestro 8th',
           position: '팀장',
-          date: '2017.8 ~ 2017.12',
+          date: '2017.08 ~ 2017.12',
           content: `소프트웨어 마에스트로 8기 수료생입니다.
           고등학교 3학년 재학중 진행했던 것으로, 컴포넌트기반 자체 엔진 개발 프로젝트를 진행했습니다.`
         },
         {
           title: '우리동네 냥아치',
           position: '팀장',
-          date: '2017.8 ~ 2017.12',
+          date: '2017.08 ~ 2017.12',
           content: `인디 게임 카페에서 팀을 모아 제작한 게임입니다.
           간단한 게임이였지만, 원격으로 작업하는 것과, 모르는 사람들이 모여서 개발한다는 점에서 많은 어려움을 겪었습니다.
           
@@ -61,7 +72,7 @@ export default {
         {
           title: '2984 Little Brother',
           position: '서브 프로그래머',
-          date: '2017.11 ~ 2018.2',
+          date: '2017.11 ~ 2018.02',
           content: `GameJam: Art, Politics and Digital Games에서 수상한 작품으로
           주한 독일 문화원의 도움을 받아 독일 A-MAZE 게임쇼에 게임을 전시했습니다.
           
