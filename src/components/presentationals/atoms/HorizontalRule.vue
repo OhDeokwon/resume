@@ -18,6 +18,7 @@ export default {
   hr {
     display: block;
     max-width: 100%;
+    min-width: 100%;
     max-height: 0;
     height: 0;
     border: solid;
