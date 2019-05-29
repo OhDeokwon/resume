@@ -9,6 +9,7 @@
         :position="block.position"
         :date="block.date"
         :content="block.content"
+        :showLine="index !== (blocks.length - 1)"
         :key="index"
       />
     </article>

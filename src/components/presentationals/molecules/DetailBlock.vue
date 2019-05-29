@@ -10,7 +10,7 @@
     <div class="content-layout">
       <paragraph :text="content" class="content" />
     </div>
-    <horizontal-rule />
+    <horizontal-rule v-if="showLine" />
   </section>
 </template>
 
@@ -40,6 +40,10 @@ export default {
     content: {
       type: String,
       default: ''
+    },
+    showLine: {
+      type: Boolean,
+      default: true
     }
   }
 }
