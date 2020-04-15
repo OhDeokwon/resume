@@ -4,7 +4,7 @@
 
 <script>
 export default {
-  name: 'Paragraph',
+  name: "P",
   props: {
     text: {
       type: [String, Number],
@@ -12,18 +12,24 @@ export default {
     },
     align: {
       type: String,
-      default: 'left'
+      default: "left"
     }
   }
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 p {
   white-space: pre-line;
   word-break: keep-all;
 }
-.left   { text-align: left }
-.center { text-align: center }
-.right  { text-align: right }
+.left {
+  text-align: left;
+}
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
+}
 </style>

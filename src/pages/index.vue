@@ -1,37 +1,34 @@
 <template>
-  <div class="container">
-    <div class="navigation-layout">
-      <!-- 아직 추가할까 말까 못 정했음 -->
-    </div>
-    <div class="main-content-layout">
-      <privacy-section-container />
-      <antecedents-section-container />
-      <social-buttons-container />
-    </div>
-  </div>
+  <Box class="resume-container" direction="column">
+    <PrivacyContainer />
+  </Box>
 </template>
 
 <script>
-import PrivacySectionContainer from '../components/containers/PrivacySectionContainer'
-import AntecedentsSectionContainer from "../components/containers/AntecedentsSectionContainer"
-import SocialButtonsContainer from "../components/containers/SocialButtonsContainer";
+import Box from '@/components/presentationals/molecules/Box'
+import PrivacyContainer from '@/components/containers/PrivacyContainer'
 
 export default {
   name: 'index',
   components: {
-    SocialButtonsContainer,
-    AntecedentsSectionContainer,
-    PrivacySectionContainer
+    Box,
+    PrivacyContainer
   }
 }
 </script>
 
 <style scoped lang="scss">
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 0 16px 0 16px;
-  }
+.resume-container {
+  width: 100%;
+  max-width: 60rem;
+  margin: auto;
+}
+
+section {
+  margin: 0 16px;
+}
+
+/deep/ .privacy-template {
+  padding-top: 3rem;
+}
 </style>
