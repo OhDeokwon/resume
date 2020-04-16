@@ -1,15 +1,15 @@
 <template>
-  <PrivacyTemplate :privacy="privacy" />
+  <CareersTemplate :careers="careers" />
 </template>
 
 <script>
 import data from '@/assets/scripts/data'
-import PrivacyTemplate from '@/components/presentationals/templates/PrivacyTemplate'
+import CareersTemplate from '@/components/presentationals/templates/CareersTemplate'
 
 export default {
-  name: 'PrivacyContainer',
+  name: 'CareerContainer',
   components: {
-    PrivacyTemplate
+    CareersTemplate
   },
   data() {
     return {

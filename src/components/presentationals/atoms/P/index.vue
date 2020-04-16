@@ -1,18 +1,16 @@
 <template>
-  <p :class="align">{{ text }}</p>
+  <p :class="align">
+    <slot />
+  </p>
 </template>
 
 <script>
 export default {
-  name: "P",
+  name: 'P',
   props: {
-    text: {
-      type: [String, Number],
-      required: true
-    },
     align: {
       type: String,
-      default: "left"
+      default: 'left'
     }
   }
 }

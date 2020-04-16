@@ -15,3 +15,93 @@
 h1 {
 	line-height: 1.2;
 }
+
+// code by https://gist.github.com/yeun/d824fc7b04b756508f4b0143535cec30
+$li-bottom-space: 0.1em;
+$li-bullets-width: 1.7em;
+$li-line-height: 1.55;
+
+$ul-bullets-font: inherit;
+$ul-bullets-font-size: 1.2em;
+$ul-bullets-font-line-height: 1.2;
+$ul-bullets-right-space: 0.65em;
+
+$ol-bullets-font: inherit;
+$ol-bullets-font-size: 1em;
+$ol-bullets-font-line-height: inherit;
+$ol-bullets-right-space: 0.65em;
+
+$li-child-size-ratio: 0.95;
+
+//  Reset list
+ol,
+ul {
+	margin: 0 0 $li-bottom-space;
+	padding: 0;
+	list-style: none;
+	list-style-image: none;
+}
+
+//  Positioning Bullets
+ol,
+ul {
+	> li {
+		&:before {
+			position: absolute;
+			width: $li-bullets-width;
+			margin-left: -$li-bullets-width;
+			display: inline-block;
+			box-sizing: border-box;
+			text-align: right;
+		}
+	}
+}
+
+// Restyle <ul>
+ul {
+	> li:before {
+		content: "•";
+		padding-right: $ul-bullets-right-space;
+		font-family: $ul-bullets-font;
+		font-size: $ul-bullets-font-size;
+		line-height: $ul-bullets-font-line-height;
+	}
+}
+
+// Restyle <ol>
+ol {
+	counter-reset: section;
+
+	> li:before {
+		counter-increment: section;
+		content: counter(section) ".";
+		padding-right: $ol-bullets-right-space;
+		font-family: $ol-bullets-font;
+		font-size: $ol-bullets-font-size;
+		line-height: $ol-bullets-font-line-height;
+	}
+}
+
+//  Refine Spacing
+ol,
+ul {
+	> li {
+		margin: 0 auto $li-bottom-space $li-bullets-width;
+		line-height: $li-line-height;
+
+		> ol,
+		> ul {
+			margin-top: $li-bottom-space;
+		}
+	}
+}
+
+li {
+	> ol,
+	> ul {
+		> li {
+			font-size: ($li-child-size-ratio * 1em);
+			margin: 0 auto ($li-bottom-space * $li-child-size-ratio) ($li-bullets-width * $li-child-size-ratio);
+		}
+	}
+}

@@ -116,6 +116,18 @@ export default {
     color: {
       type: String,
       default: '#f1f3f5'
+    },
+    xRatio: {
+      type: Number,
+      default: 10
+    },
+    yRatio: {
+      type: Number,
+      default: 10
+    },
+    blurRatio: {
+      type: Number,
+      default: 5
     }
   },
   data() {
@@ -126,10 +138,9 @@ export default {
   },
   computed: {
     styles() {
-      const x = this.width / 10
-      const y = this.height / 10
-      const blur = this.width / 5
-      console.log('x:', x, 'y:', y, 'b:', blur)
+      const x = this.width / this.xRatio
+      const y = this.height / this.yRatio
+      const blur = this.width / this.blurRatio
       return {
         background: this.color,
         boxShadow: `${x}px ${y}px ${blur}px ${getDarkColor(this.color)}, 
@@ -150,7 +161,6 @@ export default {
     onResize() {
       this.width = this.$refs.shadowBox.$el.clientWidth
       this.height = this.$refs.shadowBox.$el.clientHeight
-      console.log('width:', this.width, 'height:', this.height)
     }
   }
 }

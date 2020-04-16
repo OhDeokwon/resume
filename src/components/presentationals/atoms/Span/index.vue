@@ -1,13 +1,15 @@
 <template>
-  <span :class="align">{{ text }}</span>
+  <span :class="align">
+    <slot />
+  </span>
 </template>
 
 <script>
-import Paragraph from "./Paragraph"
+import P from '../P'
 
 export default {
-  name: "Span",
-  extends: Paragraph
+  name: 'Span',
+  extends: P
 }
 </script>
 

@@ -1,18 +1,21 @@
 <template>
   <Box class="resume-container" direction="column">
     <PrivacyContainer />
+    <CareerContainer />
   </Box>
 </template>
 
 <script>
 import Box from '@/components/presentationals/molecules/Box'
 import PrivacyContainer from '@/components/containers/PrivacyContainer'
+import CareerContainer from '@/components/containers/CareerContainer'
 
 export default {
   name: 'index',
   components: {
     Box,
-    PrivacyContainer
+    PrivacyContainer,
+    CareerContainer
   }
 }
 </script>
@@ -25,7 +28,7 @@ export default {
 }
 
 section {
-  margin: 0 16px;
+  margin: 0 16px 3rem 16px;
 }
 
 /deep/ .privacy-template {
