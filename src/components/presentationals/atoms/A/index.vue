@@ -4,6 +4,7 @@
       data.class,
       data.staticClass
     ]"
+    :href="data.attrs.href"
   >
     <slot />
   </a>
