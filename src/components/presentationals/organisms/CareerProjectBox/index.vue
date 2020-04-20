@@ -62,7 +62,7 @@ export default {
       padding-bottom: 1rem;
       border-bottom: 1px solid #adb5bd;
       margin-bottom: 1rem;
-      flex-basis: 0;
+      flex-basis: auto;
     }
   }
 
