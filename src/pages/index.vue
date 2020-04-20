@@ -2,6 +2,7 @@
   <Box class="resume-container" direction="column">
     <PrivacyContainer />
     <CareerContainer />
+    <ActivitiesContainer />
   </Box>
 </template>
 
@@ -9,13 +10,15 @@
 import Box from '@/components/presentationals/molecules/Box'
 import PrivacyContainer from '@/components/containers/PrivacyContainer'
 import CareerContainer from '@/components/containers/CareerContainer'
+import ActivitiesContainer from '@/components/containers/ActivitiesContainer'
 
 export default {
   name: 'index',
   components: {
     Box,
     PrivacyContainer,
-    CareerContainer
+    CareerContainer,
+    ActivitiesContainer
   }
 }
 </script>

@@ -1,16 +1,18 @@
 <template>
   <Box tag="section" class="privacy-template">
-    <ShadowBox class="profile-img-box" direction="row" :xRatio="30" :yRatio="30" :blurRatio="15">
+    <ShadowBox class="profile-img-box" :xRatio="30" :yRatio="30" :blurRatio="15">
       <Img :src="privacy.profile" />
     </ShadowBox>
     <Box class="introduce-box" direction="column">
-      <h1 class="greeting">
+      <h1>
         안녕하세요!
         <br />
         {{ privacy.job }}
-        <Span class="name">{{ privacy.name }}</Span>입니다.
+        <Span>{{ privacy.name }}</Span>입니다.
       </h1>
-      <Span class="introduce">{{ privacy.introduce }}</Span>
+      <Span class="introduce">
+        {{ privacy.introduce }}
+      </Span>
       <Box class="contacts">
         <template v-for="(button, index) in privacy.buttons">
           <A :href="button.url" :key="index">
@@ -105,19 +107,20 @@ export default {
 .introduce-box {
   width: 100%;
   padding: 0 3rem;
-  // flex-grow: 1;
-  // flex-basis: 45rem;
-  flex: 1 0 45rem;
+  flex: 1 0;
+
   .greeting {
     margin-bottom: 16px;
     font-size: 2.5rem;
-
-    .name {
-      color: #339af0;
-    }
   }
 
-  .introduce {
+  h1 /deep/ span {
+    color: transparent;
+    background: linear-gradient(to right, #339af0, #66d9e8);
+    background-clip: text;
+  }
+
+  /deep/ .introduce {
     font-size: 1.5rem;
   }
 }
@@ -131,7 +134,7 @@ export default {
     border-radius: 3rem;
     font-size: 0.7rem;
 
-    span {
+    /deep/ span {
       line-height: 1.4;
       margin-left: 8px;
     }
@@ -140,6 +143,16 @@ export default {
       width: 16px;
       height: 16px;
     }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .privacy-template {
+    flex-direction: column !important;
+  }
+
+  .profile-img-box {
+    margin: 0 auto 1rem auto;
   }
 }
 </style>

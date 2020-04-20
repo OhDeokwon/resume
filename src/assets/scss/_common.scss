@@ -13,7 +13,23 @@
 }
 
 h1 {
+	font-size: 2.5rem;
 	line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.1rem;
+  color: transparent;
+  background: linear-gradient(to right, #339af0, #66d9e8);
+  background-clip: text;
+}
+
+h3 {
+	font-size: 1.9rem;
+}
+
+h4 {
+	font-size: 1.6rem;
 }
 
 // code by https://gist.github.com/yeun/d824fc7b04b756508f4b0143535cec30

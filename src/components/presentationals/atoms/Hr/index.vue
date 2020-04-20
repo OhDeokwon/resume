@@ -1,14 +1,20 @@
-<template>
-  <hr :class="weight" />
+<template functional>
+  <hr
+    :class="[
+      data.class,
+      data.staticClass,
+      props.weight
+    ]"
+  />
 </template>
 
 <script>
 export default {
-  name: "Hr",
+  name: 'Hr',
   props: {
     weight: {
       type: String,
-      default: "thin"
+      default: 'thin'
     }
   }
 }

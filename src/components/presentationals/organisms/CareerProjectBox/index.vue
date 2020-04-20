@@ -1,7 +1,7 @@
 <template>
-  <Box class="career-project-box" direction="row" :wrap="false">
+  <Box class="career-project-box" :wrap="false">
     <Box class="company" direction="column">
-      <h3 class="name">{{ career.company }}</h3>
+      <h3>{{ career.company }}</h3>
       <Span class="position">{{ career.position }}</Span>
       <Span class="date">{{ career.date }}</Span>
     </Box>
@@ -42,21 +42,32 @@ export default {
 }
 
 .company {
-  flex: 1 1 20rem;
-
-  .name {
-    font-size: 1.9rem;
-  }
+  flex: 1 0 15rem;
 
   .position {
     margin-top: 1rem;
-  }
-
-  .date {
   }
 }
 
 .projects {
   flex: 2 1 auto;
+}
+
+@media screen and (max-width: 680px) {
+  .career-project-box {
+    flex-direction: column !important;
+    
+    .company {
+      width: 100%;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #adb5bd;
+      margin-bottom: 1rem;
+      flex-basis: 0;
+    }
+  }
+
+  .profile-img-box {
+    margin: 0 auto 1rem auto;
+  }
 }
 </style>

@@ -1,5 +1,13 @@
-<template>
-  <img :src="src" :alt="alt" :style="styles" />
+<template functional>
+  <img
+    :class="[
+      data.class,
+      data.staticClass
+    ]"
+    :src="props.src"
+    :alt="props.alt"
+    :style="styles"
+  />
 </template>
 
 <script>

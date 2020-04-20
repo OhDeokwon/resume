@@ -1,5 +1,11 @@
-<template>
-  <span :class="align">
+<template functional>
+  <span
+    :class="[
+      data.class,
+      data.staticClass,
+      props.align
+    ]"
+  >
     <slot />
   </span>
 </template>

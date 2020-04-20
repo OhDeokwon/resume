@@ -1,5 +1,10 @@
-<template>
-  <a>
+<template functional>
+  <a
+    :class="[
+      data.class,
+      data.staticClass
+    ]"
+  >
     <slot />
   </a>
 </template>

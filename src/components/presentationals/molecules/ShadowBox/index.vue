@@ -1,5 +1,11 @@
 <template>
-  <Box class="shadow-box" ref="shadowBox" :style="styles">
+  <Box
+    class="shadow-box"
+    ref="shadowBox"
+    :style="styles"
+    :vertical="vertical"
+    :horizontal="horizontal"
+  >
     <slot />
   </Box>
 </template>
@@ -109,9 +115,7 @@ export default {
   components: {
     Box
   },
-  extends: {
-    Box
-  },
+  extends: Box,
   props: {
     color: {
       type: String,

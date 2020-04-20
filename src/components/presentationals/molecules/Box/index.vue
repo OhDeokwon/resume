@@ -32,7 +32,7 @@ export default {
   computed: {
     classNames() {
       const isWrap = this.wrap ? 'wrap' : 'no-wrap'
-      return `box ${this.direction} ${this.vertical} ${this.horizontal} ${isWrap}`
+      return `box ${this.direction} v-${this.vertical} h-${this.horizontal} ${isWrap}`
     }
   }
 }
