@@ -31,7 +31,7 @@ export default {
 }
 
 section {
-  margin: 0 16px 3rem 16px;
+  padding: 0 16px 3rem 16px;
 }
 
 /deep/ .privacy-template {

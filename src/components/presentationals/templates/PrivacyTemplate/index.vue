@@ -88,7 +88,7 @@ export default {
 <style scoped lang="scss">
 .privacy-box {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .profile-img-box {
@@ -149,6 +149,10 @@ export default {
 @media screen and (max-width: 680px) {
   .privacy-template {
     flex-direction: column !important;
+  }
+
+  .introduce-box {
+    padding: 0 1rem;
   }
 
   .profile-img-box {
