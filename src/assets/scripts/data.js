@@ -87,7 +87,7 @@ export default {
 		},
 		{
 			title: 'Boost Course Ace 2nd - iOS 프로그래밍',
-			position: '베타테스터',
+			position: 'Beta Tester',
 			date: '2018.03 ~ 2018.08',
 			description: 'iOS 실무자들에게 코드리뷰를 받으며 프로젝트를 진행하는 부스트 코스의 베타테스터로 활동했었습니다. 별 탈 없이 코스를 완수했으며 코드리뷰를 통해 코드의 구조, 확장성에 대해 고민을 하며 한 단계 더 성장할 수 있었던 기회였습니다.'
 		},
@@ -105,7 +105,7 @@ export default {
 		},
 		{
 			title: '2984 Little Brother',
-			position: 'Team Leader',
+			position: 'Programmer',
 			date: '2017.11 ~ 2018.02',
 			description: 'GameJam: Art, Politics and Digital Games에서 수상한 작품입니다. 주한 독일 문화원의 도움으로 독일 A-MAZE / International Playful Media Festival에 전시도 하였습니다. "내가 만든 소프트웨어에 의미를 담음으로써 얼마나 큰 영향력을 줄 수 있을까?"를 생각할 수 있었던 좋은 기회였습니다.'
 		},
