@@ -63,6 +63,7 @@ export default {
 
 .date {
   margin-bottom: 1rem;
+  color: #868e96;
 }
 
 .description {
@@ -70,7 +71,7 @@ export default {
 }
 
 .work-list {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .skill {

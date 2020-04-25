@@ -1,10 +1,8 @@
 <template functional>
-  <button
-    :class="[
+  <button :class="[
       data.class,
       data.staticClass
-    ]"
-  >
+    ]">
     <slot />
   </button>
 </template>
@@ -16,4 +14,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+button {
+  cursor: pointer;
+}
 </style>

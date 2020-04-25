@@ -10,6 +10,7 @@
 	text-decoration: none;
 	word-break: keep-all;
 	line-height: 1.6;
+	outline: none;
 }
 
 h1 {
@@ -41,11 +42,13 @@ $ul-bullets-font: inherit;
 $ul-bullets-font-size: 1.2em;
 $ul-bullets-font-line-height: 1.2;
 $ul-bullets-right-space: 0.65em;
+$ul-bullets-color: #339af0;
 
 $ol-bullets-font: inherit;
 $ol-bullets-font-size: 1em;
 $ol-bullets-font-line-height: inherit;
 $ol-bullets-right-space: 0.65em;
+$ol-bullets-color: #339af0;
 
 $li-child-size-ratio: 0.95;
 
@@ -81,6 +84,7 @@ ul {
 		font-family: $ul-bullets-font;
 		font-size: $ul-bullets-font-size;
 		line-height: $ul-bullets-font-line-height;
+		color: $ul-bullets-color;
 	}
 }
 
@@ -95,6 +99,7 @@ ol {
 		font-family: $ol-bullets-font;
 		font-size: $ol-bullets-font-size;
 		line-height: $ol-bullets-font-line-height;
+		color: $ol-bullets-color;
 	}
 }
 
