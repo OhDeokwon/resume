@@ -3,7 +3,6 @@
     <PrivacyContainer />
     <CareerContainer />
     <ActivitiesContainer />
-    <FABContainer />
   </Box>
 </template>
 
