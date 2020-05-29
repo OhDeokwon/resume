@@ -6,7 +6,7 @@ export default {
     updated: '2020-01-20',
     email: 'villain406@kakao.com',
     phone: '010-8557-8011',
-    introduce: `저는 서비스의 발전 및 개선을 통해 뿌듯함을 느끼는 것을 좋아합니다. 개발자는 무조건 깔끔한 코드보다는, 필요한 코드를 작성해야한다고 생각합니다.`,
+    introduce: `저는 서비스의 발전 및 개선을 통해 뿌듯함을 느끼는 것을 좋아합니다. 코드의 가치는 비즈니스적 가치를 창출할 수 있을 때 나온다고 생각합니다.`,
     buttons: [
       {
         icon: 'images/github.svg',
