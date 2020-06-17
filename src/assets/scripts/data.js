@@ -1,67 +1,67 @@
 export default {
-	privacy: {
-		name: '김덕원',
-		job: '웹 프론트엔드 개발자',
-		profile: 'https://avatars3.githubusercontent.com/u/12786855?s=460&u=f550803f0e4cfa0ff46a50b477cad324dbb1958f&v=4',
-		updated: '2020-01-20',
-		email: 'villain406@kakao.com',
-		phone: '010-8557-8011',
-		introduce: `저는 서비스의 발전 및 개선을 통해 뿌듯함을 느끼는 것을 좋아합니다. 개발자는 무조건 깔끔한 코드보다는, 필요한 코드를 작성해야한다고 생각합니다.`,
-		buttons: [
-			{
-				icon: 'images/github.svg',
-				url: 'https://github.com/OhDeokwon'
-			}
-		]
-	},
-	careers: [
-		{
-			company: '알바체크',
-			position: 'Frontend Developer',
-			date: '2018.12 ~',
-			projects: [
-				{
-					name: '알바체크 백오피스',
-					date: '2019.08 ~',
-					description: '회사 내부적으로 데이터확인 CS관리등을 위해 제작한 어드민 페이지입니다.',
-					works: [ '백오피스 전반 개발' ],
-					skills: [
-						{
-							icon: 'images/vue.svg',
-							name: 'Vue'
-						},
-						{
-							icon: 'images/typescript.svg',
-							name: 'TypeScript'
-						}
-					]
-				},
-				{
-					name: '알바체크 프론트',
-					date: '2019.01 ~',
-					description: `자영업 사장님들을 위한 매장관리 서비스입니다.
+  privacy: {
+    name: '김덕원',
+    job: '웹 프론트엔드 개발자',
+    profile: 'https://avatars3.githubusercontent.com/u/12786855?s=460&u=f550803f0e4cfa0ff46a50b477cad324dbb1958f&v=4',
+    updated: '2020-01-20',
+    email: 'villain406@kakao.com',
+    phone: '010-8557-8011',
+    introduce: `저는 서비스의 발전 및 개선을 통해 뿌듯함을 느끼는 것을 좋아합니다. 코드의 가치는 비즈니스적 가치를 창출할 수 있을 때 나온다고 생각합니다.`,
+    buttons: [
+      {
+        icon: 'images/github.svg',
+        url: 'https://github.com/BangChunDeok'
+      }
+    ]
+  },
+  careers: [
+    {
+      company: '알바체크',
+      position: 'Frontend Developer',
+      date: '2018.12 ~',
+      projects: [
+        {
+          name: '알바체크 백오피스',
+          date: '2019.08 ~',
+          description: '회사 내부적으로 데이터확인 CS관리등을 위해 제작한 어드민 페이지입니다.',
+          works: [ '백오피스 전반 개발' ],
+          skills: [
+            {
+              icon: 'images/vue.svg',
+              name: 'Vue'
+            },
+            {
+              icon: 'images/typescript.svg',
+              name: 'TypeScript'
+            }
+          ]
+        },
+        {
+          name: '알바체크 프론트',
+          date: '2019.01 ~',
+          description: `자영업 사장님들을 위한 매장관리 서비스입니다.
           서비스 전체를 유지보수 및 개발하고 있습니다.
 					`,
-					works: [ '프론트 서비스 전반 개발', 'A/B 테스트 구현을 통한 사용성 개선' ],
-					skills: [
-						{
-							icon: 'images/nuxt.svg',
-							name: 'Nuxt'
-						},
-						{
-							icon: 'images/vue.svg',
-							name: 'VueX'
-						},
-						{
-							icon: 'images/javascript.svg',
-							name: 'JavaScript'
-						}
-					]
-				},
-				{
-					name: '알바체크 iOS Application 유지보수',
-					date: '2018.12 ~',
-					description: `알바체크 프론트를 웹뷰로 띄워주고 프론트에서 하기 힘든 작업들을 JS Bridge로 연결시켜 작업하고 있습니다.
+          works: [ '프론트 서비스 전반 개발', 'A/B 테스트 구현을 통한 사용성 개선' ],
+          skills: [
+            {
+              icon: 'images/nuxt.svg',
+              name: 'Nuxt'
+            },
+            {
+              icon: 'images/vue.svg',
+              name: 'VueX'
+            },
+            {
+              icon: 'images/javascript.svg',
+              name: 'JavaScript'
+            }
+          ]
+        },
+        {
+          name: '알바체크 iOS Application 유지보수',
+          date: '2018.12 ~',
+          description: `알바체크 프론트를 웹뷰로 띄워주고 프론트에서 하기 힘든 작업들을 JS Bridge로 연결시켜 작업하고 있습니다.
 					iOS Application 전체를 유지보수 및 개발하고 있습니다.`,
 					works: [ '카카오톡 초대 기능 개발', '문자 초대 기능 개발', 'JS Brdige를 인터페이스로 구조화' ],
 					skills: [
