@@ -10,7 +10,7 @@ export default {
     buttons: [
       {
         icon: 'images/github.svg',
-        url: 'https://github.com/BangChunDeok'
+        url: 'https://github.com/KimChunsick'
       }
     ]
   },
