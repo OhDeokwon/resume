@@ -4,6 +4,7 @@
       <h3>{{ career.company }}</h3>
       <Span class="position">{{ career.position }}</Span>
       <Span class="date">{{ career.date }}</Span>
+      <P class="description">{{ career.description }}</P>
     </Box>
     <Box class="projects" direction="column">
       <template v-for="(project, index) in career.projects">
@@ -14,6 +15,7 @@
 </template>
 
 <script>
+import P from '@/components/presentationals/atoms/P'
 import Span from '@/components/presentationals/atoms/Span'
 import Box from '@/components/presentationals/molecules/Box'
 import ProjectBox from '@/components/presentationals/molecules/ProjectBox'
@@ -21,6 +23,7 @@ import ProjectBox from '@/components/presentationals/molecules/ProjectBox'
 export default {
   name: 'CareerProjectBox',
   components: {
+    P,
     Span,
     Box,
     ProjectBox
@@ -42,10 +45,17 @@ export default {
 }
 
 .company {
-  flex: 1 0 15rem;
+  flex: 1 0 16rem;
 
   .position {
     margin-top: 1rem;
+  }
+
+  /deep/ .description {
+    padding-right: 1.5rem;
+    margin-top: 1rem !important;
+    font-size: 0.9rem !important;
+    color: #868e96 !important;
   }
 }
 
@@ -56,7 +66,7 @@ export default {
 @media screen and (max-width: 680px) {
   .career-project-box {
     flex-direction: column !important;
-    
+
     .company {
       width: 100%;
       padding-bottom: 1rem;

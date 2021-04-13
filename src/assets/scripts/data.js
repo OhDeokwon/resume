@@ -17,14 +17,17 @@ export default {
   careers: [
     {
       company: '알바체크',
-      position: 'Frontend Developer',
+			position: 'Frontend Developer',
+			description: `알바체크는 비대면 매장 관리 서비스입니다. 기존의 알바 현장에서 카카오톡이 주로 사용되며 일과 삶이 구분되지 않는 상황을 해결하고, 사장님과 근무자 모두 서로 믿고 일할 수 있는 환경을 만들기 위해 탄생했습니다.
+
+			사장님이 업무를 등록해놓으면 근무자들이 업무를 해결하고 보고하는 시스템을 자동화한 솔루션입니다. 업무를 넘어 채용 등, 알바의 모든 것이 되기 위해 노력하고 있습니다.`,
       date: '2018.12 ~',
       projects: [
         {
           name: '알바체크 백오피스',
-          date: '2019.08 ~',
-          description: '회사 내부적으로 데이터확인 CS관리등을 위해 제작한 어드민 페이지입니다.',
-          works: [ '백오피스 전반 개발' ],
+          date: '2019.08 ~ 2020.06',
+          description: '회사 내부적으로 데이터확인 CS관리등을 위해 제작한 어드민 페이지입니다. 현재는 어드민 페이지를 새로 개발함으로써, 기존 프로젝트는 중단되었습니다.',
+          works: [ '유저 데이터 관리 기능 제작', '매장 데이터 관리 기능 제작', 'B2B 본사(HQ)용 간단한 데이터 접근, 수정 및 통계 기능 제작' ],
           skills: [
             {
               icon: 'images/vue.svg',
@@ -37,12 +40,17 @@ export default {
           ]
         },
         {
-          name: '알바체크 프론트',
+          name: '알바체크 앱 프론트',
           date: '2019.01 ~',
-          description: `자영업 사장님들을 위한 매장관리 서비스입니다.
-          서비스 전체를 유지보수 및 개발하고 있습니다.
-					`,
-          works: [ '프론트 서비스 전반 개발', 'A/B 테스트 구현을 통한 사용성 개선' ],
+          description: `웹앱에 사용되는 앱 프론트를 제작했습니다.`,
+					works: [
+						'JWT 인증 개발',
+						'컴포넌트 재사용성을 위해 Atomic Design 적용',
+						'패키지 관리를 통해 초기 로딩 속도 최적화',
+						'인앱 결제, PG사를 통한 결제 구현',
+						'네이티브와 원활한 데이터 교환을 위한 JS Bridge용 라이브러리 제작',
+						'앱 프론트의 모든 기능 개발'
+					],
           skills: [
             {
               icon: 'images/nuxt.svg',
@@ -59,19 +67,25 @@ export default {
           ]
         },
         {
-          name: '알바체크 iOS Application 유지보수',
+          name: '알바체크 iOS, Android Application 유지보수',
           date: '2018.12 ~',
-          description: `알바체크 프론트를 웹뷰로 띄워주고 프론트에서 하기 힘든 작업들을 JS Bridge로 연결시켜 작업하고 있습니다.
-					iOS Application 전체를 유지보수 및 개발하고 있습니다.`,
-					works: [ '카카오톡 초대 기능 개발', '문자 초대 기능 개발', 'JS Brdige를 인터페이스로 구조화' ],
+          description: `알바체크 프론트를 웹뷰로 띄워주고 프론트에서 하기 힘든 작업들을 JS Bridge로 연결시키거나 웹쪽 인터페이스와 연결하여 작업하고 있습니다.
+					Native Application 전체를 유지보수 및 개발하고 있습니다.`,
+					works: [
+						'카카오톡, 문자 초대 기능 개발',
+						'Push notification 기능을 웹과 연결하는 인터페이스 개발',
+						'DeepLink 기능을 웹과 연결하는 인터페이스 개발',
+						'Barcode Reader 기능과 웹 연결',
+						'JS Brdige를 인터페이스로 구조화'
+					],
 					skills: [
 						{
 							icon: 'images/swift.svg',
 							name: 'Swift'
 						},
 						{
-							icon: 'images/alamofire.png',
-							name: 'Alamofire'
+							icon: 'images/kotlin.svg',
+							name: 'Kotlin'
 						}
 					]
 				}

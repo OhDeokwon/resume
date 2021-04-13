@@ -1,11 +1,5 @@
 <template functional>
-  <p
-    :class="[
-      data.class,
-      data.staticClass,
-      props.align
-    ]"
-  >
+  <p :class="[data.class, data.staticClass, props.align]">
     <slot />
   </p>
 </template>
