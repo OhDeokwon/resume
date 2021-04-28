@@ -41,14 +41,15 @@ export default {
         },
         {
           name: '알바체크 앱 프론트',
-          date: '2019.01 ~',
+          date: '2019.01 ~ 2021.04',
           description: `웹앱에 사용되는 앱 프론트를 제작했습니다.`,
 					works: [
 						'JWT 인증 개발',
 						'컴포넌트 재사용성을 위해 Atomic Design 적용',
-						'패키지 관리를 통해 초기 로딩 속도 최적화',
+						'패키지 최적화를 통해 초기 로딩 속도 최적화',
 						'인앱 결제, PG사를 통한 결제 구현',
-						'네이티브와 원활한 데이터 교환을 위한 JS Bridge용 라이브러리 제작',
+						'네이티브 웹뷰와 원활한 데이터 교환을 위한 JS Bridge용 라이브러리 제작',
+						'원활한 에러 추적을 위한 에러 로깅 시스템 연동',
 						'앱 프론트의 모든 기능 개발'
 					],
           skills: [
@@ -68,7 +69,7 @@ export default {
         },
         {
           name: '알바체크 iOS, Android Application 유지보수',
-          date: '2018.12 ~',
+          date: '2018.12 ~ 2021.04',
           description: `알바체크 프론트를 웹뷰로 띄워주고 프론트에서 하기 힘든 작업들을 JS Bridge로 연결시키거나 웹쪽 인터페이스와 연결하여 작업하고 있습니다.
 					Native Application 전체를 유지보수 및 개발하고 있습니다.`,
 					works: [
@@ -76,7 +77,8 @@ export default {
 						'Push notification 기능을 웹과 연결하는 인터페이스 개발',
 						'DeepLink 기능을 웹과 연결하는 인터페이스 개발',
 						'Barcode Reader 기능과 웹 연결',
-						'JS Brdige를 인터페이스로 구조화'
+						'JS Brdige를 인터페이스로 구조화',
+						'iOS, Android Application의 모든 기능 개발'
 					],
 					skills: [
 						{
